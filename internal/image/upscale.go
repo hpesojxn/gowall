@@ -35,6 +35,7 @@ func (p *UpscaleProcessor) Process(img image.Image, theme string, format string)
 		"windows": "realesrgan-ncnn-vulkan.exe",
 		"darwin":  "realesrgan-ncnn-vulkan",
 		"linux":   "realesrgan-ncnn-vulkan",
+		"freebsd": "realesrgan-ncnn-vulkan",
 	}
 
 	binary, err := utils.FindBinary(binaryNames, destFolder)

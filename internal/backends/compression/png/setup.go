@@ -38,6 +38,7 @@ func SetupPngquant() error {
 func CheckPngquantInstalled() (string, error) {
 	binaryNames := map[string]string{
 		"linux":   config.PngquantBinaryName,
+		"freebsd": config.PngquantBinaryName,
 		"windows": config.PngquantBinaryName + ".exe",
 		"darwin":  config.PngquantBinaryName,
 	}
